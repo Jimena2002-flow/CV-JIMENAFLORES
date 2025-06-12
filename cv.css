@@ -88,7 +88,7 @@
     height: 40px;
 }  
 .pasos-resumen {
-  display: grid;
+  display: flex;
   justify-content: space-around;
   text-align: center;
   padding: 30px 10px;
@@ -97,7 +97,7 @@
 }
 .paso {
   flex: 1 1 200px;
-  max-width: 200px;
+  max-width: 500px;
   padding: 10px;
 }
 .paso img {
@@ -108,14 +108,98 @@
   font-size: 14px;
   color: #444;
 }
+.colbarra {
+  color: #000000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #d0c950;
+  list-style: none;
+
+}
+/* Estilo para la sección de habilidades */
+.skills-section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 02rem;
+}
+
+.skills-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.skill {
+  margin-bottom: 1.0rem;
+}
+
+.skill p {
+  margin: 0 0 0.6rem 0;
+  font-weight: bold;
+  color: #242424;
+}
+
+.skill-bar {
+  background-color: #ddd;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  background-color: #4f6f1d;
+  border-radius: 8px 0 0 10px;
+}
+/* Gráfico circular */
+.circle-stats {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.circle {
+  text-align: center;
+}
+
+.circle svg {
+  width: 100px;
+  height: 100px;
+  transform: rotate(-90deg);
+  margin: 40px;
+}
+
+.bg {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 3.8;
+}
+
+.progress {
+  fill: none;
+  stroke: #4f6f1d;
+  stroke-width: 3.8;
+  stroke-linecap: round;
+}
+
+.percentage {
+  fill: #4f6f1d;
+  font-size: 0.6em;
+  text-anchor: middle;
+  dominant-baseline: middle;
+  transform: rotate(90deg);
+}
+
+
   @media (min-width: 768px) {
     .grid-container {
       grid-template-columns: 1fr 2fr;
       grid-template-areas: 
-        "foto-perfil inicio"
+        "inicio inicio"
         "experiencia experiencia"
         "formacion formacion"
-        "idiomas habilidades";
+        "idiomas idiomas"
+        "habilidades habilidades";
     }
     #experiencia {
       grid-area: experiencia;
@@ -132,39 +216,52 @@
     #habilidades {
       grid-area: habilidades;
     }
-  
   }
-  .experiencia {
-    display: flex;
-    padding: 2rem;
-    background-color: #f7f7f7;
-    margin: 0rem auto;
-    max-width: 1500px;
-    border-radius: 10px;
-  }
-  .titulo-seccion {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .contenedor-articulos {
-    display: inline-block;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
-  
-  .articulo {
-    background: #e5b655;
-    display: inline-block;
-    padding: 1rem;
-    border-radius: 20px;
-    text-align: center;
-    width: 450px;
-    height: 200px;
-    margin-bottom: 10px;
-    margin-left: 30px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-  }
-  
+
+
+/* Estilos para la sección de iconos */
+.icon-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.icon-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.icon-flex {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.icon-item {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.icon-item:hover {
+  transform: translateY(-5px);
+}
+
+.icon-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.5rem;
+}
+
+.icon-item p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
