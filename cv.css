@@ -5,15 +5,26 @@
   }
   
   body {
-    font-family: "Segoe UI", sans-serif;
-    background: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
     color: #333;
   }
   h1 {
-    text-align: center;
+    margin-bottom: 10px;
+    color: #000000;
   }
+  h2,{
+    margin-bottom: 10px;
+    color: #131212;
+  }
+  h3 {
+    margin-bottom: 10px;
+    color: #000000
+  }
+  
   .iconotext{
-    text-align: left;
+    text-align: center;
   }
   header {
     background-color: #153119;
@@ -21,7 +32,9 @@
     text-align: center;
     padding: 1rem;
   }
-  
+  .menu a:hover {
+    background-color: #b4ac3c;
+  }
   .menu {
     display: flex;
     flex-wrap: wrap;
@@ -43,17 +56,12 @@
     font-weight: bold;
   }
   .foto-perfil img {
-    max-width: 200px;
-    border-radius: 30%;
-    display: block;
-    margin: auto;
+    max-width: 180px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    align-items: center;
   }
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
-  }
+
   .item3 {
     grid-area: main;
   }
@@ -66,16 +74,21 @@
   .item3 > p {
     margin-bottom: 7px;
   }
-  @media only screen and (max-width: 600px) {
-    .item3 {grid-area: 3 / span 6;}
-  }
+  @media (max-width: 768px) {
+    .icon-item {
+      width: 100px;
+      padding: 0.8rem;
+    }
   
-  @media only screen and (min-width: 600px) {
-    .item3 {grid-area: 2 / span 4;}
-  }
-  @media only screen and (min-width: 768px) {
-    .item3 {grid-area: 2 / span 4;}
-  }
+    .icon-item img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .icon-item p {
+      font-size: 0.8rem;
+    }
+  } 
 .icon-row {
     display: flex;
     justify-content: center;
@@ -87,6 +100,10 @@
     width: 40px;
     height: 40px;
 }  
+.icon-item img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
 .pasos-resumen {
   display: flex;
   justify-content: space-around;
@@ -264,4 +281,9 @@
   color: #555;
   margin: 0;
 }
-
+footer {
+  text-align:center; 
+  padding: 1rem; 
+  background:#153119; 
+  color:white;
+}
