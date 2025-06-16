@@ -1,0 +1,297 @@
+    /* RESET de CSS */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+  
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f0f4f8;
+        color: #333;
+        line-height: 1.5;
+        padding: 20px;
+      }
+  
+      header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+  
+      header h1 {
+        color: #1e3a16;
+        margin-bottom: 8px;
+        font-size: 2.4rem;
+      }
+  
+      header p {
+        font-style: italic;
+        color: #4a7c24;
+        font-weight: 600;
+      }
+      
+  
+      /* CONTENEDOR GENERAL */
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+
+      .menu a:hover {
+        background-color: #b4ac3c;
+      }
+      .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #4f6f1d;
+        list-style: none;
+      }
+      
+      .menu li {
+        margin: 0.6rem;
+      }
+      
+      .menu a {
+        text-decoration: none;
+        color: black;
+        background-color: #d0c950;
+        border-radius: 5px;
+        padding: 6px 3px;
+        font-weight: bold;
+      }
+  
+      /* SECCIONES */
+      section {
+        margin-bottom: 40px;
+      }
+  
+      section h2 {
+        border-left: 5px solid #5c8a21;
+        padding-left: 10px;
+        color: #37521f;
+        margin-bottom: 15px;
+        font-size: 1.8rem;
+      }
+  
+      /* FOTO PERFIL */
+      .foto-perfil {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+  
+      .foto-perfil img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        margin-bottom: 12px;
+      }
+  
+      .foto-perfil h3 {
+        font-size: 1.6rem;
+        color: #2c4b0a;
+      }
+  
+      /* LISTAS DE EXPERIENCIA Y FORMACION */
+      .lista {
+        list-style-type: none;
+      }
+  
+      .lista li {
+        margin-bottom: 15px;
+        padding-left: 10px;
+        border-left: 3px solid #8cbf26;
+        background: #f7f9f5;
+        padding: 10px 15px;
+        border-radius: 5px;
+      }
+  
+      .lista li strong {
+        color: #37521f;
+      }
+
+      .skills-section {
+        max-width: 1000px;
+        margin: auto;
+        padding: 02rem;
+        }
+        
+        .skills-section h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #ffffff;
+        }
+        
+        .skill {
+        margin-bottom: 1.0rem;
+        }
+        
+        .skill p {
+        margin: 0 0 0.6rem 0;
+        font-weight: bold;
+        color: #242424;
+        }
+        
+        .skill-bar {
+        background-color: #ddd;
+        height: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        }
+        
+        .skill-fill {
+        height: 100%;
+        background-color: #4f6f1d;
+        border-radius: 8px 0 0 10px;
+        }
+        .pasos-resumen {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            padding: 30px 10px;
+            flex-wrap: wrap;
+            gap: 20px;
+            } 
+        .paso {
+            flex: 1 1 200px;
+            max-width: 200px;
+            padding: 10px;
+        }
+        .paso img {
+            width: 80px;
+            margin-bottom: 5px;
+        }
+        .paso p {
+            font-size: 15px;
+            color: #444;
+        }
+
+
+  
+      /* HABILIDADES: flex container para íconos */
+      .habilidades-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+  
+      .habilidad {
+        background: #e7f1d1;
+        border-radius: 8px;
+        width: 140px;
+        text-align: center;
+        padding: 15px;
+        box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease;
+        cursor: default;
+      }
+  
+      .habilidad:hover {
+        transform: scale(1.05);
+      }
+  
+      .habilidad img {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 10px;
+      }
+  
+      .habilidad p {
+        font-weight: 600;
+        color: #2e4a12;
+      }
+    
+    /* Gráfico circular */
+.circle-stats {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    }
+    .circle {
+    text-align: center;
+    }
+    
+    .circle svg {
+    width: 100px;
+    height: 100px;
+    transform: rotate(-90deg);
+    margin: 40px;
+    }
+    
+    .bg {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 3.8;
+    }
+    
+    .progress {
+    fill: none;
+    stroke: #4f6f1d;
+    stroke-width: 3.8;
+    stroke-linecap: round;
+    }
+    
+    .percentage {
+    fill: #4f6f1d;
+    font-size: 0.6em;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    transform: rotate(90deg);
+    }
+    footer {
+        text-align:center; 
+        padding: 1rem; 
+        background:#153119; 
+        color:white;
+    }
+  
+      /* RESPONSIVE */
+      @media (max-width: 768px) {
+        .habilidades-container {
+          justify-content: center;
+        }
+  
+        .habilidad {
+          width: 100px;
+          padding: 10px;
+        }
+  
+        .habilidad img {
+          width: 35px;
+          height: 35px;
+        }
+  
+        section h2 {
+          font-size: 1.5rem;
+        }
+      }
+  
+      @media (max-width: 400px) {
+        body {
+          padding: 10px;
+        }
+  
+        .container {
+          padding: 15px 15px;
+        }
+  
+        .habilidad {
+          width: 90px;
+          padding: 8px;
+        }
+  
+        .habilidad p {
+          font-size: 0.85rem;
+        }
+
+        .idiomas p {
+            font-size: 0.85rem;
+          }
+      }
