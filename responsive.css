@@ -207,44 +207,7 @@
         font-weight: 600;
         color: #2e4a12;
       }
-    
-    /* Gráfico circular */
-.circle-stats {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    }
-    .circle {
-    text-align: center;
-    }
-    
-    .circle svg {
-    width: 100px;
-    height: 100px;
-    transform: rotate(-90deg);
-    margin: 40px;
-    }
-    
-    .bg {
-    fill: none;
-    stroke: #ddd;
-    stroke-width: 3.8;
-    }
-    
-    .progress {
-    fill: none;
-    stroke: #4f6f1d;
-    stroke-width: 3.8;
-    stroke-linecap: round;
-    }
-    
-    .percentage {
-    fill: #4f6f1d;
-    font-size: 0.6em;
-    text-anchor: middle;
-    dominant-baseline: middle;
-    transform: rotate(90deg);
-    }
+  
     footer {
         text-align:center; 
         padding: 1rem; 
