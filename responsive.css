@@ -214,6 +214,31 @@
         background:#153119; 
         color:white;
     }
+
+    /*contacto*/
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: 0 auto;
+      gap: 1em;
+    }
+    
+    input, textarea {
+      padding: 0.8em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    button {
+      padding: 0.8em;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
   
       /* RESPONSIVE */
       @media (max-width: 768px) {
