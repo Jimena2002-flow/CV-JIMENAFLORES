@@ -219,26 +219,33 @@
     form {
       display: flex;
       flex-direction: column;
-      max-width: 500px;
-      margin: 0 auto;
-      gap: 1em;
+      max-width: 900px;
+      margin: 8 auto;
+      gap: 4em;
     }
     
     input, textarea {
-      padding: 0.8em;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+      padding: 0.9em;
+      border: 2px solid #052204;
+      border-radius: 7px;
     }
     
-    button {
+    .button {
       padding: 0.8em;
-      background-color: #0077cc;
+      background-color: #2e4a12;
       color: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
     }
-    
+    .restablecer {
+      padding: 0.8em;
+      background-color: #e23737;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
   
       /* RESPONSIVE */
       @media (max-width: 768px) {
